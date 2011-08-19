@@ -333,11 +333,11 @@ CHECK		= sparse
 
 CHECKFLAGS     := -D__linux__ -Dlinux -D__STDC__ -Dunix -D__unix__ \
 		  -Wbitwise -Wno-return-void $(CF)
-MODFLAGS	= -DMODULE -fsched-spec-load -ftree-vectorize -funroll-loops -funswitch-loops -fsingle-precision-constant -ffast-math
+MODFLAGS	= -DMODULE -ftree-vectorize -funroll-loops -funswitch-loops
 CFLAGS_MODULE   = $(MODFLAGS)
 AFLAGS_MODULE   = $(MODFLAGS)
 LDFLAGS_MODULE  = -T $(srctree)/scripts/module-common.lds
-CFLAGS_KERNEL	= -fsched-spec-load -ftree-vectorize -funroll-loops -funswitch-loops -fsingle-precision-constant -ffast-math
+CFLAGS_KERNEL	= -ftree-vectorize -funroll-loops -funswitch-loops
 AFLAGS_KERNEL	=
 CFLAGS_GCOV	= -fprofile-arcs -ftest-coverage
 
