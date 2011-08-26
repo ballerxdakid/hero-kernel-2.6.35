@@ -448,7 +448,7 @@ static void acpuclk_set_div(const struct clkctl_acpu_speed *hunt_s) {
 	/*
 	 * "Clear" PLL2
 	 */
-	if (hunt_s->a11clk_khz <= 528000 || hunt_s->pll2_lval <= 0){
+	if (hunt_s->a11clk_khz < 518400 || hunt_s->pll2_lval <= 0){
 		/* Check we are not already "cleared" */
 		if(readl(A11S_CLK_CTL_PLL2) != 0x37){
 			writel(0x37, A11S_CLK_CTL_PLL2);
