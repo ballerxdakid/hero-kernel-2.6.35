@@ -1,7 +1,7 @@
 #
 # Automatically generated make config: don't edit
 # Linux kernel version: 2.6.35.14
-# Sat Aug 27 15:52:04 2011
+# Tue Aug 30 03:17:06 2011
 #
 CONFIG_ARM=y
 CONFIG_SYS_SUPPORTS_APM_EMULATION=y
@@ -1103,7 +1103,7 @@ CONFIG_MSM_RMNET=y
 # CONFIG_MSM_RMNET_DEBUG is not set
 # CONFIG_NETPOLL is not set
 # CONFIG_NET_POLL_CONTROLLER is not set
-# CONFIG_KINETO_GAN is not set
+# CONFIG_GAN_ETH is not set
 # CONFIG_ISDN is not set
 # CONFIG_PHONE is not set
 
